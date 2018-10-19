@@ -1,0 +1,7 @@
+server:
+  port: 90
+spring:
+  application:
+    name: spring-boot-scal
+  profiles:
+    active: dev
