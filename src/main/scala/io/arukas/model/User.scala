@@ -1,7 +1,5 @@
 package io.arukas.model
 
-import com.alibaba.fastjson.JSON
-
 /**
   * Created by IntelliJ IDEA. <br/>
   *

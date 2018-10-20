@@ -1,7 +1,7 @@
 server:
-  port: 90
+  port: 8080
 spring:
   application:
-    name: spring-boot-scal
+    name: spring-boot-scala
   profiles:
     active: dev
