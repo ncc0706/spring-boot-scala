@@ -1,6 +1,6 @@
 package io.arukas.endpoint
 
-import org.springframework.http.HttpMethod
+import io.arukas.service.UserService
 import org.springframework.web.bind.annotation.{GetMapping, PostMapping, RequestMapping, RestController}
 
 /**
@@ -12,11 +12,12 @@ import org.springframework.web.bind.annotation.{GetMapping, PostMapping, Request
   */
 @RestController
 @RequestMapping(value = Array("users"))
-class UserEndpoint {
+class UserEndpoint(userService: UserService) {
 
 
   @GetMapping(value = Array("", "/"))
   def users(): String = {
+    userService.demo()
     "users"
   }
 
